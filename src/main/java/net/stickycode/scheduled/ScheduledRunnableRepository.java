@@ -12,28 +12,9 @@
  */
 package net.stickycode.scheduled;
 
+public interface ScheduledRunnableRepository
+    extends Iterable<ScheduledRunnable> {
 
+  void schedule(ScheduledRunnable scheduledRunnable);
 
-public class Schedule {
-  
-  private final long initialDelay;
-  private final long period;
-
-  public Schedule(long initialDelay, long period) {
-    this.initialDelay = initialDelay;
-    this.period = period;
-  }
-
-  public long getInitialDelay() {
-    return initialDelay;
-  }
-
-  public long getPeriod() {
-    return period;
-  }
-  
-  @Override
-  public String toString() {
-    return "after " + initialDelay + "s with period " + period + "s";
-  }
 }
