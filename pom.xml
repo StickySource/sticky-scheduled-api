@@ -10,7 +10,7 @@
 
 	<groupId>net.stickycode.scheduled</groupId>
 	<artifactId>sticky-scheduled-api</artifactId>
-	<version>3.1-SNAPSHOT</version>
+	<version>3.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>sticky-scheduled-api-3</name>
@@ -57,7 +57,7 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>clirr-maven-plugin</artifactId>
 				<configuration>
-					<comparisonVersion>[3.1]</comparisonVersion>
+					<comparisonVersion>[3.2]</comparisonVersion>
 				</configuration>
 			</plugin>
 		</plugins>
