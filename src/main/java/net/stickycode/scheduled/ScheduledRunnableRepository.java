@@ -23,6 +23,8 @@ public interface ScheduledRunnableRepository
 
   /**
    * Add the given scheduled runnable to this iteration
+   *
+   * @param scheduledRunnable The runnable that should be scheduled
    */
   void schedule(ScheduledRunnable scheduledRunnable);
 

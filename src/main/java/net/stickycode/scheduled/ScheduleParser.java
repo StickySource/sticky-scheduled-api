@@ -19,12 +19,14 @@ package net.stickycode.scheduled;
 public interface ScheduleParser {
 
   /**
+   * @param specification the specification that this parser should try to identify
    * @return true if the given specification is parseable by this parser
    */
   boolean matches(String specification);
 
   /**
-   * @returns the Schedule as parsed from the given specification
+   * @param specification the specification that this parser has said it can parse
+   * @return the Schedule as parsed from the given specification
    */
   Schedule parse(String specification);
 }

@@ -20,24 +20,24 @@ import java.util.concurrent.TimeUnit;
 public interface Schedule {
 
   /**
-   * The delay to wait before the initial execution of the {@link ScheduledRunnable} to align the schedule as specified.
+   * @return The delay to wait before the initial execution of the {@link ScheduledRunnable} to align the schedule as specified.
    */
   long getInitialDelay();
 
   /**
-   * The time between executions of the {@link ScheduledRunnable}
+   * @return The time between executions of the {@link ScheduledRunnable}
    */
   long getPeriod();
 
   /**
    * The units to use when interpreting the Period and initial delay
-   * 
+   *
    * @return the units of this schedule
    */
   TimeUnit getUnits();
 
   /**
-   * Return true if this schedule is disabled or scheduled off
+   * @return true if this schedule is disabled or scheduled off
    */
   boolean isEnabled();
 

@@ -22,8 +22,7 @@ public interface ScheduledRunnable
     extends Runnable, ConfigurationAttribute {
 
   /**
-   * Return the schedule with which the runnable should be executed. This is called once for each configuration cycle.
-   *
+   * @return the schedule with which the runnable should be executed. This is called once for each configuration cycle.
    */
   Schedule getSchedule();
 
